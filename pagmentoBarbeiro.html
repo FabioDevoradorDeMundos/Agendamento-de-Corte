@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pagamentoBabeiro.css">
+    <title>Barbearia Fabão Pagamento</title>
+</head>
+<body>
+
+    <form action="https://formsubmit.co/fabiocaetano670@gmail.com" method="POST">
+        <label>Nome e Sobrenome</label>
+        <input type="text" placeholder="Fabio Severino" name="name" required>
+        
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Endereço de Email" required>
+      
+        <input type="hidden" name="_next" value="C:\Users\fabio\OneDrive\Área de Trabalho\calculadoraPasta\pagmentoBarbeiro.html">
+
+        <label>Telefone</label>
+        <input type="text" placeholder="12 3456-7890" required>
+
+        <label>CPF</label>
+        <input type="text" placeholder="123.456-789-10" required>
+
+        <label>Data Para o Corte</label required>
+        <input type="date">
+
+        <button type="submit" id="btn">Enviar</button>
+   </form>
+
+
+    
+</body>
+</html>
+
+<script>
+    const btn = document.querySelector('#btn')
+    const emailInput = document.querySelector('#email')
+
+
+
+
+    function envia(e){
+        alert('Agendamento Enviado!')
+        let email = emailInput.value
+        console.log(email)
+
+    }
+
+    btn.addEventListener('click',envia)
+
+
+
+</script>
